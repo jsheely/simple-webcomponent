@@ -5,6 +5,7 @@ module.exports = (env, argv) => {
   return {
     entry: [path.join(__dirname, "src/index")],
     output: {
+      path: path.join(__dirname, "/dist"),
       filename: "bundle.js",
       publicPath: "/",
     },
@@ -15,7 +16,10 @@ module.exports = (env, argv) => {
           use: "babel-loader",
           exclude: /node_modules/,
         },
-
+        // {
+        //   test: /\.css$/,
+        //   use: ["style-loader", "css-loader"],
+        // },
         {
           test: /\.html$/,
           use: "html-loader",
@@ -29,7 +33,7 @@ module.exports = (env, argv) => {
       }),
     ],
     devServer: {
-      contentBase: "./dist",
+      contentBase: "./public",
       port: 5000,
       host: "0.0.0.0",
       disableHostCheck: true,
