@@ -1,0 +1,22 @@
+{
+  "name": "simple-webcomponent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Sheely <jsheely@thirtytech.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "babel-loader": "^8.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "lit-element": "^2.3.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
